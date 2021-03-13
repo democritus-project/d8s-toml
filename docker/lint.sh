@@ -4,17 +4,17 @@ set -euxo pipefail
 
 echo "Running linters and formatters..."
 
-isort democritus_toml/ tests/
+isort d8s_toml/ tests/
 
-black democritus_toml/ tests/
+black d8s_toml/ tests/
 
-mypy democritus_toml/ tests/
+mypy d8s_toml/ tests/
 
-pylint --fail-under 9 democritus_toml/*.py
+pylint --fail-under 9 d8s_toml/*.py
 
-flake8 democritus_toml/ tests/
+flake8 d8s_toml/ tests/
 
-bandit -r democritus_toml/
+bandit -r d8s_toml/
 
 # we run black again at the end to undo any odd changes made by any of the linters above
-black democritus_toml/ tests/
+black d8s_toml/ tests/
