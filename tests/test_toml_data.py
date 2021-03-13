@@ -1,4 +1,4 @@
-from democritus_toml import is_toml, toml_read, toml_write
+from d8s_toml import is_toml, toml_read, toml_write
 
 TEST_TOML_DATA = '''title = "TOML Example"
 
