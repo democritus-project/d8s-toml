@@ -14,9 +14,20 @@ Democritus functions<sup>[1]</sup> for working with TOML.
 
 We use `d8s` as an abbreviation for `democritus` (you can read more about this [here](https://github.com/democritus-project/roadmap#what-is-d8s)).
 
-## Usage
+## Functions
 
-Coming soon...
+  - ```python
+    def toml_read(toml_data: str):
+        """Read the toml data."""
+    ```
+  - ```python
+    def is_toml(possible_toml_data: str) -> bool:
+        """Determine whether the possible_toml_data is valid toml data."""
+    ```
+  - ```python
+    def toml_write(data: dict) -> str:
+        """Convert the given data to a toml string."""
+    ```
 
 ## Development
 
